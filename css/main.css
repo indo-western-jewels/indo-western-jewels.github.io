@@ -187,7 +187,7 @@ a {
 }
 
 .background-img {  
-  background-image: url('../img/wedding-ring.jpg'); 
+  background-image: url('..img/ring-background-image.jpg'); 
   padding: 100px 100px;
   background-position: center;
   background-attachment: fixed;
