@@ -1,6 +1,7 @@
 /*********** CORE TYPE STYLING *************/
 
 body {
+  margin-top: 17.5em;
   background-color: rgb(217,216,210);
   font-family: georgia;
   font-size: 1em;
@@ -16,10 +17,12 @@ h1, h2, h3, h4, h5,h6 {
 h1 {
   font-size: 2em;
   font-weight: bold;
-  color: #444;   
+  color: crimson;
+  margin: 2em 0;   
 }
 
 h2 {
+  margin: 1em 0;
   text-align: center;
   font-size: 1.5em;
   color: #8C4653;
@@ -36,6 +39,7 @@ h4 {
   font-family: 'Cardo', serif;
   font-size: 1.5em;
   color: #fff;
+  margin: 1em 0;
 }
 
 h5 {
@@ -58,14 +62,9 @@ a {
  
 
 .box{
-  border: 5px solid black;
-  background-color: black;
   color: #fff;
-  width: 120px;
-  height: 30px;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
+  margin: 1em 0;
 }
 
 .buy {
@@ -136,7 +135,6 @@ a {
 }
 
 .banner-image {
- margin-top: 7.5em;
  text-align: center;
  background-image: url('../img/banner-header.jpg');
  background-size: cover;
@@ -186,14 +184,20 @@ a {
 
 .caption {
   margin: 1em 0;
-  font: 1.5em 'Rubik', sans-serif;;
+  font: 1.5em 'Rubik', sans-serif;
   color: #204177
+}
+
+.caption-rings {
+  margin: 1em 0;
+  font: 1.5em 'Rubik', sans-serif;
+  color: #fff;
 }
 
 .jewelry{
   background-color : #2E112D;
-
 }
+
 .indian-jewels {
   font-family: 'Rubik', sans-serif;
   background-color: #F1F2F4;
@@ -211,7 +215,8 @@ a {
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
-  color: navy;
+  font-size: 2em;
+  color: tomato;
 }
 
 .rings {
@@ -232,7 +237,7 @@ a {
  text-align: center;
  font-size: 1.5em;
  font-family: georgia;
- color: grey;
+ color: black;
 }
 
 .collections {
@@ -247,7 +252,7 @@ a {
   margin-right: auto;
 }
 
-.paragraph {
+.gift-types {
   text-align: center;
   font-size: 1.5em;
   color: black;
@@ -267,10 +272,20 @@ a {
   padding: 2px 5px;
 }
 
-.footer-icons {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 1em;
+.footer-item a {
+ text-decoration: underline;
+}
+
+.footer-item a:hover {
+  text-decoration: none;
+  background-color: blue;
+}
+
+.social-icons {
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  margin: 0 0.5em;;
 }
 
 .menu-item a {
@@ -311,9 +326,13 @@ a {
 
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 850px) {
   .menu-item {
     display: inline-block;
+  }
+
+  body {
+   margin-top: 7.5em;
   }
 
   .album{
